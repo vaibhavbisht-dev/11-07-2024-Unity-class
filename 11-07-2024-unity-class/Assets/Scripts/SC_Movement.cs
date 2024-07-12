@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SC_Movement : MonoBehaviour
+public class SC_Movement : MonoBehaviour,IDamagable
 {
     public float _speed = 10f;
     Transform _player;
@@ -72,5 +72,8 @@ public class SC_Movement : MonoBehaviour
         Velocity.y += _gravity * Time.deltaTime * Time.deltaTime;
 
         _character.Move(Velocity);
+    }
+    public void Damage() {
+        Debug.Log("Player is hit");
     }
 }
