@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class SC_Movement : MonoBehaviour,IDamagable
 {
-    public float _speed = 10f;
+    [SerializeField]
+    private float _speed = 10f;
     Transform _player;
     CharacterController _character;
 
