@@ -2,8 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SC_Button : MonoBehaviour
+public class SC_Player : MonoBehaviour
 {
+
+    private int _player_Health = 10;
+
+    public int myHealth = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +19,4 @@ public class SC_Button : MonoBehaviour
     {
         
     }
-    
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SC_Movement : MonoBehaviour,IDamagable
@@ -57,6 +55,7 @@ public class SC_Movement : MonoBehaviour,IDamagable
         {
             Velocity.y = -0.5f;
         }
+        
         // Gets input from (WASD) from -1 to 1
         float Xaxis = Input.GetAxis("Horizontal");
         float Zaxis = Input.GetAxis("Vertical");
